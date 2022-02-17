@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App Using JavaScript</title>
+    <meta name="description" content="Todo App Using JavaScript">
+    <meta name="keywords" content="Html | css | JavaScript | Todo App">
+<link rel="shortcut icon" href="fav.png" type="image/x-icon">
+    <!-- Fonts Google-->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500"
+     rel="stylesheet">
+    <!-- File css-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    
+    <div id="boxInputContainer" class="container-fluid " >
+     <div id="boxDetails">
+        <i id="closeBtn" class=" fas fa-plus"></i>
+        <h4>add</h4> 
+        <h5>new task</h5> <br>
+
+        <input type="text" id="new-todo" maxlength="26" placeholder="What?">
+        <small style="text-align:center; display:block;">(Max 26 Charactor including spaces)</small>
+         <br>
+        <input type="text" id="new-todo-time" class="mb-4" maxlength="8" placeholder="00:00">
+        <button id="adder" >Add!</button>
+     </div>
+    </div>
+
+    <div class="container">
+        <div id="wrapper">
+      <header> 
+        <span id="day">Day,</span> <span id="date">Date</span> <br>
+        <span id="tasksTotal"><span id="tasksTotalN"></span><small> Tasks</small></span>
+        <span id="month">Month</span>    
+    
+      </header>
+
+      <div id="icons"><i class="fas fa-plus-circle"></i></div>
+
+      <ul id="tasks">
+        <!-- data are comes from local storage -->
+      </ul>  
+     
+        </div>
+        <button id="clear-all" >Clear All Done Tasks ! </button>   
+        <footer>
+            Designed &amp; Developed by <a href="#" target="_blank"> ( alaa shaban )</a>
+        </footer>
+    </div>
+   
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
